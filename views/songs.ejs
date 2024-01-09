@@ -1,0 +1,12 @@
+<%- include('partials/header'); -%>
+<center>
+    <h4>Insert New Song</h4>
+    <form action="/songs" method="post">
+        <label for="sname">Name of the song</label><br>
+        <input type="text" id="sname" name="sname"><br>
+        <label for="aname">Name of the Artist</label><br>
+        <input type="text" id="aname" name="aname"><br><br>
+        <input type="submit" value="Add Song">
+    </form>
+</center>
+<%- include('partials/footer'); -%>

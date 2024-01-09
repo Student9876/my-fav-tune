@@ -1,0 +1,8 @@
+ul.nodot {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem;
+  }
+ul.nodot li{
+  margin: 1rem;
+}

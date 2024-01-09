@@ -1,12 +1,51 @@
 <%- include('partials/header'); -%>
 <center><h2>Welcome to My Favourite Tune Website</h2></center>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <center>
+                <h4><u>Your Favourite Artists</u></h4>
+                <% if(newArtistData.length == 0){ %>
+                    <h4>List is empty</h4>
+                <% }else{ %>
+                <ul class="nodot">
+                    <% newArtistData.forEach(item => { %>
+                    <li>
+                        <div class="card w-50">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= item %></h5>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <% }); %>
+                </ul>
+                <% } %>
+            </center>
+        </div>
+        <div class="col">
+            <center>
+                <h4><u>Your Favourite Songs </u></h4>
+                <% if(newSongData.length == 0){ %>
+                    <h4>List is empty</h4>
+                <% }else{ %>
+                <ul class="nodot">
+                    <% newSongData.forEach(item => { %>
+                    <li>
+                        <div class="card w-50">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= item.songname%></h5>
+                                <p class="card-text"><%= item.artist%> </p>
+                            </div>
+                        </div>
+                    </li>
+                    <% }); %>
+                </ul>
+                <% } %>
+            </center>
+        </div>
+    </div>
 
-<form action="/" method="post">
-    <label for="fname">Name of the Artist</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-</form>
+</div>
 
 <%- include('partials/footer'); -%>
