@@ -10,7 +10,8 @@ This webapp is made using the technologies
 1. Clone the repository in your PC and go-to root directory of the project
     ```
     git clone https://github.com/Student9876/my-fav-tune.git
-    cd my-fav-tune/
+    cd my-fav-tune
+    
     ```
 1. Intall necessary package by entering the following command
    ```
