@@ -1,0 +1,16 @@
+{
+  "name": "my_favourite_tunes",
+  "version": "1.0.0",
+  "description": "This is a NodeJs app to show ones favourite song and artist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shouvik Sutar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
