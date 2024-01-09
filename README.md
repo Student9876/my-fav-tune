@@ -20,6 +20,7 @@ This webapp is made using the technologies
 1. Create a new file named `.env` in the root directory `my-fav-tune/' of the project and paste the following code in the file and save it.
    ```
    API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVoemJvanNoZmJidWx5Y25scnljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ3NzExODUsImV4cCI6MjAyMDM0NzE4NX0.sbHIG4dAH2694v7_a4ag4yHssk6JrNyM52xvUi0OKow
+   PORT=9000
    ```
    This is the API key of the Supabase project I used in the project to store all the data.
 
