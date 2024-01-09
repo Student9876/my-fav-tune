@@ -29,4 +29,4 @@ This webapp is made using the technologies
    ```
    node server.js
    ```
-1. Now open `http://localhost:3000/` on your browser to access the app.
+1. Now open `http://localhost:9000/` on your browser to access the app. If the port `9000` is occupied in your PC then change the port number to your desired in the `.env` file and run the app again.
