@@ -55,7 +55,6 @@ async function insertArtistData(Name) {
     } catch (error) {
         console.error(error);
     }
-
 }
 
 async function insertSongData(sName, aName) {
@@ -75,7 +74,6 @@ app.get('/', async (req, res) => {
     const artistData = await fetchArtists();
     const songData = await fetchSongs();
 
-
     let newArtistData= [];
     let newSongData = [];
 
@@ -94,7 +92,6 @@ app.get('/', async (req, res) => {
 
     // For song data 
     for(let i = 0;i<songData.length;i++){
-        console.log(songData[i].songname);
         let words1 = songData[i].songname.split(" ");
         for (let i = 0; i < words1.length; i++) {
             if (words1[i] != '')
@@ -117,25 +114,21 @@ app.get('/', async (req, res) => {
 app.get('/artists', (req, res) => {
     res.render('artists');
 })
-app.post('/artists', (req, res) => {
+app.post('/artists',async (req, res) => {
     const Name = req.body.fname.toLowerCase() + " " + req.body.lname.toLowerCase();
-    console.log(Name);
-    insertArtistData(Name);
+    await insertArtistData(Name);
+    res.redirect('/artists');
 })
 
 app.get('/songs', (req, res) => {
     res.render('songs');
 })
-app.post('/songs', (req, res) => {
+app.post('/songs', async (req, res) => {
+    const aName = req.body.fname.toLowerCase() + " "+ req.body.lname.toLowerCase();
     const sName = req.body.sname.toLowerCase();
-    const aName = req.body.aname.toLowerCase();
-    console.log(sName, aName);
-    insertSongData(sName, aName);
-})
-
-
-
-
+    await insertSongData(sName, aName);
+    res.redirect('/songs');
+});
 
 
 app.listen(3000, () => {

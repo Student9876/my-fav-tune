@@ -1,3 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.indexHeading {
+  margin: 3rem;
+  padding: 1rem;
+  border: 1px solid #000000;
+  border-radius: 5px 5px;
+  box-shadow: 5px 5px 4px #969696;
+  width: 60%;
+}
+.headingBox {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #000000;
+  border-radius: 5px 5px;
+  box-shadow: 5px 5px 4px #969696;
+  width: 50%;
+}
+.indexHeading h2 {
+  margin: 0rem;
+}
+
 ul.nodot {
     list-style-type: none;
     padding: 0;
@@ -5,4 +30,15 @@ ul.nodot {
   }
 ul.nodot li{
   margin: 1rem;
+}
+
+
+@media (max-width:500px) {
+  .indexHeading{
+    width:80%;
+    margin: 1rem;
+  }
+  .headingBox{
+    width: 80%;
+  }
 }
