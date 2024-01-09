@@ -1,5 +1,5 @@
 # My Favourite Tune
-This is a NodeJs app to show ones favourite song and artist.
+This is a NodeJs app to show ones favourite songs and artists.
 This webapp is made using the technologies 
 - EJS
 - CSS
