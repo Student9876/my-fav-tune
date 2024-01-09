@@ -28,3 +28,4 @@ This webapp is made using the technologies
    ```
    node server.js
    ```
+1. Now open `http://localhost:3000/` on your browser to access the app.
